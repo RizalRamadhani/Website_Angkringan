@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 50vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: rgb(235, 215, 162);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo{
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(31, 27, 27);
+    text-decoration: none;
+   
+}
+section nav .logo span{
+    font-style: italic;
+    color: rgba(190, 109, 3, 0.719);
+}
+
+/* section nav p{
+    color: red;
+    margin: 0 15px;
+    margin-right: 100;
+} */
+
+section nav ul{
+    list-style: none;
+   
+   
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+   
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: rgba(190, 109, 3, 0.719);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.2s;
+   
+}
+
+section nav ul li a:hover{
+    color: rgb(243, 180, 6);
+}
+
+section nav ul li a::after{
+    content: '';
+    background: rgb(243, 180, 6);
+    width: 0;
+    height: 1px;
+    display: block;
+    transition: 0.2s ease-in-out;
+
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav .icon{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+}
