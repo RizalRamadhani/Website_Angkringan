@@ -141,3 +141,98 @@ section nav ul li a:hover::after{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.locations{
+    width:100%;
+    padding: 70px 0;
+}
+
+.locations h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-size: 55px;
+}
+.locations h1 span{
+    color: var(--primaryColor);
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.locations .locations-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.locations .locations-main .locations-text{
+    margin-left: 70px;
+    margin-bottom: 150px;
+    
+}
+
+.locations .locations-text h4{
+    width: 650;
+    color: #000;
+    text-align: justify;
+    font-size: 50px;
+    /* margin-bottom: 200px;
+    */
+}
+
+.locations .locations-text h4 span{
+    width: 650;
+    color: var(--primaryColor);
+    text-align: justify;
+    font-size: 50px;
+    animation: slide 12s;
+   
+}
+
+.locations .locations-text p{
+
+    width: 800px;
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 50px;
+
+}
+
+.locations .locations-main .locations-text a{
+    text-decoration: none;
+
+   
+}
+
+
+.locations .locations-map iframe{
+   width: 500px;
+   position: relative;
+   height: 500px;
+   background: rgb(10, 10, 10);
+   margin-right: 50px;
+   padding: 5px 5px;
+   border-radius: 1rem;
+}
+
+.btn-active{
+    padding: 10px 20px;
+    float: left;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.btn-active:hover{
+    background-color: var(--primaryColor);
+}
+
+
+
+
