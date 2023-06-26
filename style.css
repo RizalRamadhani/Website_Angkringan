@@ -5,9 +5,13 @@
     font-family: sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+:root{
+    --primaryColor: rgb(255, 149, 10);
 }
+
+/* html{
+    scroll-behavior: smooth;
+} */
 
 section{
     width: 100%;
@@ -21,22 +25,16 @@ section nav{
     position: fixed;
     right: 0;
     left: 0;
-    background: rgb(235, 215, 162);
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background: rgb(27, 26, 26);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1000;
 }
 
 section nav .logo{
-    font-weight: 600;
-    font-size: 2rem;
-    color: rgb(31, 27, 27);
-    text-decoration: none;
-   
-}
-section nav .logo span{
-    font-style: italic;
-    color: rgba(190, 109, 3, 0.719);
-}
+    margin: -11px 5;
+    cursor: pointer;
+    width: 100px;
+} 
 
 /* section nav p{
     color: red;
@@ -46,7 +44,6 @@ section nav .logo span{
 
 section nav ul{
     list-style: none;
-   
    
 }
 
@@ -58,7 +55,7 @@ section nav ul li{
 
 section nav ul li a{
     text-decoration: none;
-    color: rgba(190, 109, 3, 0.719);
+    color: #fff;
     font-weight: 500;
     font-size: 17px;
     transition: 0.2s;
@@ -66,12 +63,12 @@ section nav ul li a{
 }
 
 section nav ul li a:hover{
-    color: rgb(243, 180, 6);
+    color: rgb(255, 230, 0);
 }
 
 section nav ul li a::after{
     content: '';
-    background: rgb(243, 180, 6);
+    background: rgb(255, 230, 0);
     width: 0;
     height: 1px;
     display: block;
@@ -82,9 +79,65 @@ section nav ul li a:hover::after{
     width: 100%;
 }
 
-section nav .icon{
-    font-size: 18px;
-    color: #000;
-    margin: 0 5px;
-    cursor: pointer;
+/* About CSS */
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 700px 0;
 }
+
+.about .about-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about-main .image img{
+    width: 700px;
+    position: relative;
+    top: 60px;
+}
+
+.about .about-main .about-text span{
+    color: rgb(255, 149, 10);
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about .about-main .about-text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 10px;
+}
+
+.about .about-main .about-text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+.about .about-main .about-text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    font-size: 20px;
+}
+
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu h1 span{
+    color: var(--primaryColor);
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
